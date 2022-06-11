@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "minLength": 4
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "subject": {
+      "type": "enumeration",
+      "enum": [
+        "Office Colleagues",
+        "Collage Friends"
+      ],
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true,
+      "minLength": 10
+    },
+    "isFavourite": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
